@@ -705,3 +705,37 @@ color: var(--focus-color);
    pointer-events: none
 
 }
+
+/* ============== stopka newsletter ======*/
+
+.label {
+display: flex;
+         flex-direction: column;
+         margin-bottom: 20px;
+         Font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--main-background)
+}
+
+.input {
+   position: absolute;
+      width: 47px;
+      height: 20px;
+      left: 831px;
+      top: 1751px;
+   
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+}
