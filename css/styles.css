@@ -888,12 +888,14 @@ transition-duration: 250ms;
           transition-property: background-color, border-color;
           transition-duration: 250ms;
           transition-timing-function: var(--cubic-bezier);
+          
        }
    
        .checkbox-vector {
           display: block;
           width: 16px;
           height: 15px;
+         fill: white;
        }
    
        .checkbox-agreement {
@@ -906,7 +908,7 @@ transition-duration: 250ms;
          text-decoration: underline !important
        }
    
-       .checkbox-input:checked+.checkbox-vector {
+       .checkbox-input:checked + .checkbox-icon {
           background-size: contain;
           margin-left: auto;
           margin-right: auto;
