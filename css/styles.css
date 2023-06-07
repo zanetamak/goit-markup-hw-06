@@ -46,7 +46,7 @@ a:link {
 
 .container {
 max-width: 1200px;
-margin: 0 auto;
+margin: 0 auto
 }
 
 .section {
@@ -812,9 +812,7 @@ color: rgba(117, 117, 117, 1);
       outline: transparent;
 }
 
-.input-style:hover,
 .input-style:focus-within,
-.modal-window:hover,
 .modal-window:focus-within {
    fill: var(--focus-color);
    border-color: var(--focus-color);
@@ -876,6 +874,8 @@ transition-duration: 250ms;
        }
    
        .checkbox-input {
+          -moz-appearance: none;
+          -webkit-appearance: none;
           appearance: none;
           position: absolute;
        }
@@ -903,10 +903,10 @@ transition-duration: 250ms;
    
        .underline-link {
           color: var(--focus-color);
-          text-decoration: underline;
+         text-decoration: underline !important
        }
    
-       .checkbox-input:checked+.checkbox-icon {
+       .checkbox-input:checked+.checkbox-vector {
           background-size: contain;
           margin-left: auto;
           margin-right: auto;
