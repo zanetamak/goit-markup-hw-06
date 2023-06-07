@@ -16,12 +16,13 @@
    --button-background: rgba(245, 244, 250, 1);
    --footer-color:  rgba(47, 48, 58, 1);
    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1)
+   --
 }
 
 .body {
    font-family: 'Roboto', sans-serif;
    color: rgba(33, 33, 33, 1);
-   --main-background: rgba(255, 255, 255, 1);
+   --main-background: var(--main-background);
 }
 
    .h1, h2, h3, h4, h5, h6, p {
@@ -243,7 +244,7 @@ font-family: 'Roboto';
    font-size: 14px;
    line-height: 1.7;
    letter-spacing: 0.03em;
-   color: rgba(117, 117, 117, 1);
+   color: var(--second-line-color);
 }
 
 .features-picture {
@@ -308,7 +309,7 @@ display: flex;
 /* team ====================================== */
 
 .team {
-   background: rgba(245, 244, 250, 1);
+   background: var(--button-background);
    align-items: center;
    justify-content: center;
 }
@@ -340,7 +341,7 @@ border-radius: 0px 0px 4px 4px;
 padding-top: 30px;
 padding-bottom: 30px;
 height: 168px;
-background: #FFFFFF;
+background: var(--main-background);
 }
 
 .index-team-name {
@@ -743,7 +744,7 @@ margin-left: 77px
    transform: translate(-50%, -50%);
    width: 528px;
    height: 581px;
-   background-color: rgba(255, 255, 255, 1);
+   background-color: var(--main-background);
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
 }
@@ -874,8 +875,7 @@ transition-duration: 250ms;
        }
    
        .checkbox-input {
-          -moz-appearance: none;
-          -webkit-appearance: none;
+   
           appearance: none;
           position: absolute;
        }
@@ -895,7 +895,7 @@ transition-duration: 250ms;
           display: block;
           width: 16px;
           height: 15px;
-         fill: white;
+         fill: var(--main-background);
        }
    
        .checkbox-agreement {
@@ -909,9 +909,6 @@ transition-duration: 250ms;
        }
    
        .checkbox-input:checked + .checkbox-icon {
-          background-size: contain;
-          margin-left: auto;
-          margin-right: auto;
           background-color: var(--focus-color);
           border-color: var(--focus-color);
        }
