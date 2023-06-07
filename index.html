@@ -349,6 +349,19 @@
                         </li>
                     </ul>
                 </div>
+                <div class="footer-newsletter">
+                    <form>
+                        <label>
+                            <h3 class="footer-submit">Zapisz się do newslettera</h3>
+                            <input class="footer-input" type="text" name="username" placeholder="E-mail" required/>
+                        </label>
+                        <button class="button-footer" type="submit">Zapisz się
+                            <svg class="button-icon-send" width="24" height="24">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
     </footer>
 <div class="backdrop is-hidden" data-modal>
@@ -359,6 +372,59 @@
                     </use>
                 </svg>
     </button>
+    <form class="form-window">
+        <p class="modal-title">Zostaw swoje dane w formularzu ponizej</p>
+        <label class="label-title">Imie
+            <div class="input-style">
+            <input class="modal-window" type="text" name="name" required/>
+            <svg class="modal-window-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-Vectorname">
+                </use>
+            </svg>
+        </div>
+        </label>
+<label>
+<label class="label-title">Telefon
+    <div class="input-style">
+    <input class="modal-window" type="tel" name="phone" required/>
+    <svg class="modal-window-icon" width="13" height="13">
+        <use href="./images/icons.svg#icon-Vectorphone">
+        </use>
+    </svg>
+    </div>
+</label>
+<label>
+<label class="label-title">Email
+    <div class="input-style">
+    <input class="modal-window" type="email" name="email" required/>
+    <svg class="modal-window-icon" width="15" height="12">
+        <use href="./images/icons.svg#icon-Vectormail">
+        </use>
+    </svg>
+</div>
+</label>
+<label>
+    <label class="label-title">Komentarz
+    <textarea class="modal-window comment" name="feedback" rows="5" placeholder="Wprowadź tekst" required></textarea>
+</label>
+
+<label for="statute" class="checkbox-window">
+                    <input type="checkbox" class="checkbox-input" name="statute_acceptance" value="statute" id="statute"
+                        required>
+
+                    <span class="checkbox-icon">
+                        <svg class="checkbox-vector" width="16" height="15">
+                            <use href="./images/icons.svg#icon-check-vector"></use>
+                        </svg>
+                    </span>
+
+                    <p class="checkbox-agreement">Oświadczam iż akceptuję <a class="underline-link link"
+                            href="">Regulamin </a>i <a class="underline-link link" href="">Politykę
+                            Prywatności.</a></p>
+                </label>
+   <div class="button-position"><button class="modal-window-button" type="submit">Wyślij</button>
+   </div>
+    </form>
 </div>
 </div>
 
